@@ -11,6 +11,7 @@ S = non_terminals[0]    # End state
 
 expression = '<expression>' # this is used in table, where expression is replaced with $
 
+# <expression> is simulated as terminal, for ease of use
 terminals = ['woof', 'meow', 'chrrrrr', '(', ')', 'sit', 'bark', 'stay', 'new_day', 'come', 'die', '<expression>']
 
 
