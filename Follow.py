@@ -34,6 +34,8 @@ def get_term_index_follow(non_terminal, index, split_line):
             follow[non_term_searched] += first[split_line[current_index]]
             if empty[non_term_searched] == empty_set:
                 return
+            else:
+                continue
         if split_line[current_index] in terminals:
             follow[non_term_searched] += [split_line[current_index]]
             return
@@ -64,6 +66,8 @@ def remove_duplicates():
 
 
 def get_follow():
+    _get_follow()
+    _get_follow()
     _get_follow()
     _get_follow()
     remove_duplicates()

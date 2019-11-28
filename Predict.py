@@ -49,4 +49,6 @@ def remove_duplicates():
 def get_predict():
     _get_predict()
     _get_predict()
+    _get_predict()
+    _get_predict()
     remove_duplicates()

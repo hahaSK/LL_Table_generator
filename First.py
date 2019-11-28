@@ -35,4 +35,6 @@ def remove_duplicates():
 def get_first():
     _get_first()
     _get_first()
+    _get_first()
+    _get_first()
     remove_duplicates()

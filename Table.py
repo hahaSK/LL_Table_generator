@@ -4,6 +4,7 @@ Created by Juraj Lahvička, xlahvi00
 
 from definitions import *
 from Predict import predicts
+from termcolor import colored
 
 table = {}
 rows = non_terminals
@@ -36,7 +37,10 @@ def print_table():
                         else:
                             predict_number = cell_key + 1
                             values_in_cell += predict_number.__str__()
-            print(values_in_cell, end='\t')
+            if values_in_cell.__contains__(','):
+                print(colored(values_in_cell, 'red'), end='\t')
+            else:
+                print(values_in_cell, end='\t')
         print('', end='\n')
 
 
